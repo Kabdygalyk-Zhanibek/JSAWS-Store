@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSAWS-Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html" data-i18n="brand">JSAWS-Store Products</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav_main">Main</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="products.html" data-i18n="nav_products">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal" data-i18n="nav_contacts">Contacts</a></li>
+                        <!-- Language selector for localization -->
+                        <li class="nav-item ms-lg-3">
+                            <select id="langSwitch" class="form-select form-select-sm bg-secondary text-white border-0">
+                                <option value="en">EN</option>
+                                <option value="ru">RU</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5 pt-5">
+        <h2 class="text-center mb-4" data-i18n="catalog_title">Catalog of products</h2>
+        
+        <div class="text-center mb-4">
+            <button id="hideBtn" class="btn btn-outline-secondary btn-sm m-1" data-i18n="hide_desc">Hide description</button>
+            <button id="showBtn" class="btn btn-outline-secondary btn-sm m-1" data-i18n="show_desc">Show description</button>
+            <button id="animateBtn" class="btn btn-outline-primary btn-sm m-1" data-i18n="animate_btn">Animate the heading</button>
+        </div>
+
+        <!-- Dynamic container for products from JSON -->
+        <div class="row" id="product-container">
+            <!-- Data is loaded via script.js from products.json -->
+        </div>
+    </main>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" data-i18n="modal_title">Connect with us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label class="form-label" data-i18n="form_name">Name</label>
+                            <input type="text" class="form-control" id="nameInput" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" data-i18n="form_email">Email</label>
+                            <input type="email" class="form-control" id="emailInput" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" data-i18n="form_msg">Message</label>
+                            <textarea class="form-control" id="messageInput" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100" data-i18n="form_submit">Submit</button>
+                    </form>
+                    <div id="formAlert" class="mt-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <p class="mb-0" data-i18n="footer">&copy; 2026 JSAWS. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
