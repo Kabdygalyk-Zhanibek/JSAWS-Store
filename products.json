@@ -2,21 +2,27 @@
     {
         "id": 1,
         "name": "JSAWS Raman spectrometers V3.5 Lab",
+        "RU_name": "JSAWS Рамановские спектрометры V3.5 Lab",
         "description": "Identify and analyze chemical compounds with high precision. Can identify any substances if laser can interact with them. If the substance is new, it can give approximate specifications.",
+        "RU_description": "Определяйте и анализируйте химические соединения с высокой точностью. Может идентифицировать любые вещества, если лазер может взаимодействовать с ними. Если вещество новое, оно может дать приблизительные характеристики.",
         "price": "85 000$",
         "image": "https://www.renishaw.com/media/img/gen/1a6b471dfa3042609d759a74c7be7459.jpg"
     },
     {
         "id": 2,
         "name": "JSAWS Transmission Electron Microscopes V5.7",
+        "RU_name": "JSAWS Трансмиссионные электронные микроскопы V5.7",
         "description": "It operates on the principle of transmitting a controlled beam of electrons, accelerated to extreme speeds, through a specimen.",
+        "RU_description": "Он работает по принципу передачи управляемого пучка электронов, ускоренных до экстремальных скоростей, через образец.",
         "price": "7 000 000$",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyE89zV_M5WyW7l3qVxuELN5ySbRoKI-i4N_hZ_HpjGA&s"
     },
     {
         "id": 3,
         "name": "Supercomputer JSAWS modeling 3200",
+        "RU_name": "Суперкомпьютер JSAWS моделирование 3200",
         "description": "High-performance computing for advanced scientific simulations of space, weather, brain, creature, etc.",
+        "RU_description": "Высокопроизводительное вычисление для продвинутых научных симуляций космоса, погоды, мозга, существа и т.д.",
         "price": "19 600 000$",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5hHeN8VgkVxB8rcHf-VFguTUKEaetyppVKyTSYF1d3A&s=10"
     }
